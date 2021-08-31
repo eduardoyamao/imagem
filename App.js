@@ -3,7 +3,8 @@ import {View, Text, StatusBar, StyleSheet, TouchableOpacity, Modal, Image,
    PermissionsAndroid, Platform } from 'react-native';
 import { RNCamera } from 'react-native-camera';
 import CameraRoll from '@react-native-community/cameraroll';
-import ImagePicker from 'react-native-image-picker';
+//import ImagePicker from 'react-native-image-picker';
+import * as ImagePicker from "react-native-image-picker"
 
 export default function App(){
   const [type, setType] = useState(RNCamera.Constants.Type.back);
